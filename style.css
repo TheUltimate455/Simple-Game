@@ -10,3 +10,11 @@ p {
 body {
        background-color:#008B8B;
 }
+ul {
+     font-family: "Lucida Console", monospace;
+     color:#E0FFFF
+}
+li {
+     font-family: "Lucida Console", monospace;
+     color:#E0FFFF
+}
