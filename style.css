@@ -1,1 +1,11 @@
-
+h1 {
+     font-family: "Copperplate", fantasy;
+     color:#8B0000 
+}
+p {
+     font-family: "Lucida Console", monospace;
+     color:#8B0000
+}
+body {
+       background-color: #C21E56;
+}
