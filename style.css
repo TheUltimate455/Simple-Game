@@ -18,3 +18,18 @@ li {
      font-family: "Lucida Console", monospace;
      color:#E0FFFF
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #008B8B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E0FFFF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E0FFFF;
+}
