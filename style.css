@@ -23,7 +23,9 @@ body {
 .square {
        background-color: white;
        height: 250px;
-       width: 250vw;       
+       width: 250vw;
+       justify-content: center;
+       align-items: center;      
 }
 ul {
      font-family: "Lucida Console", monospace;
