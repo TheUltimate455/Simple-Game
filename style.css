@@ -9,6 +9,21 @@ p {
 }
 body {
        background-color:#008B8B;
+       padding: 0;
+       margin: 0;
+}
+.container {
+       background-color: #00008B;
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;       
+}
+.square {
+       background-color: white;
+       height: 250px;
+       width: 350vw;       
 }
 ul {
      font-family: "Lucida Console", monospace;
