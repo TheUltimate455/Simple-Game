@@ -58,11 +58,11 @@ body {
 }
 ul {
      font-family: "Lucida Console", monospace;
-     color:#E0FFFF
+     color:#FF3131
 }
 li {
      font-family: "Lucida Console", monospace;
-     color:#E0FFFF
+     color:#FF3131
 }
 ::-webkit-scrollbar {
   width: 10px;
