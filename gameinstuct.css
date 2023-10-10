@@ -1,0 +1,81 @@
+h1 {
+     font-family: "Copperplate", fantasy;
+     color:#FF3131
+
+}
+p {
+     font-family: "Lucida Console", monospace;
+     color:#FF3131
+}
+body {
+       background-color:#8B0000;
+}
+
+#main {
+	text-align: center;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+}
+
+#the-game {
+	width: 800px;
+	height: 450px;
+	background-color: #336;
+	border: 1px solid  #449;
+	margin: auto;
+}
+
+#game-cube {
+	width: 45px;
+	height: 45px;
+	background-color: #48a;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+#info-banner {
+	color: #ff0;
+}
+
+.container {
+       background-color: #00008B;
+       height: 50vh;
+       width: 50vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;       
+}
+.square {
+       background-color: white;
+       height: 250px;
+       width: 250vw;
+       justify-content: center;
+       align-items: center;      
+}
+ul {
+     font-family: "Lucida Console", monospace;
+     color:#E0FFFF
+}
+li {
+     font-family: "Lucida Console", monospace;
+     color:#E0FFFF
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8B0000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF3131;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF3131;
+}
