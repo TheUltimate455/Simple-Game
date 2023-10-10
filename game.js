@@ -1,58 +1,93 @@
-import pygame
+// game.js by Mlondie Lukhele
+// This script contains the logic for the game
+// Read the comments to understand what the code does
 
-# Initialize Pygame
-pygame.init()
+const width = 800;
+const height = 450;
+const keyDown = 40;
+const keyUp = 38;
+const keyLeft = 37;
+const keyRight = 39;
 
-# Set up the game window
-window_width = 800
-window_height = 600
-window = pygame.display.set_mode((window_width, window_height))
-pygame.display.set_caption("Cube Platformer")
+const MOVE_AMOUNT = 5; // the number of pixels the cube is supposed to move at a time
+const CUBE_WIDTH = 45;
+const CUBE_HEIGHT = 45;
 
-# Set up the player cube
-player_width = 50
-player_height = 50
-player_x = (window_width - player_width) // 2
-player_y = window_height - player_height - 10
-player_velocity = 5
+let cube = null;
 
-# Set up gravity
-gravity = 0.5
-player_jump_power = 10
-is_jumping = False
-jump_count = 10
+let state = {
+  x: width / 2,
+  y: height / 2
+}
 
-# Game loop
-running = True
-while running:
-    # Handle events
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-    
-    # Move the player
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT]:
-        player_x -= player_velocity
-    if keys[pygame.K_RIGHT]:
-        player_x += player_velocity
-    
-    # Apply gravity and jumping
-    if is_jumping:
-        if jump_count >= -10:
-            neg = 1 if jump_count >= 0 else -1
-            player_y -= (jump_count ** 2) * 0.5 * neg
-            jump_count -= 1
-        else:
-            is_jumping = False
-            jump_count = 10
-    else:
-        player_y += gravity
-    
-    # Draw the game objects
-    window.fill((255, 255, 255))  # Clear the window
-    pygame.draw.rect(window, (255, 0, 0), (player_x, player_y, player_width, player_height))  # Draw the player
-    pygame.display.update()  # Update the display
+window.onload = function() {
+	// this to do immediately the window is loaded
+	cube = document.getElementById('game-cube');
+	window.addEventListener('keydown', checkKeys);
+}
 
-# Quit the game
-pygame.quit()
+function checkKeys() {
+	//cube.title = `The ${event.keyCode} key was pressed.`;
+	let keypressed = event.keyCode;
+	if (keypressed == keyLeft) moveLeft();
+	else if (keypressed == keyRight) moveRight();
+	else if (keypressed == keyDown) moveDown();
+	else if (keypressed == keyUp) moveUp();
+}
+
+function moveLeft() {
+	let current_left = getComputedStyle(cube)['left'];
+	current_left = parseInt(current_left);
+	if (current_left <= 0) return;
+	current_left -= MOVE_AMOUNT;
+	cube.style.left = `${current_left}px`;
+}
+
+function moveRight() {
+	let current_left = getComputedStyle(cube)['left'];
+	current_left = parseInt(current_left);
+	if (current_left >= width - CUBE_WIDTH) return;
+	current_left += MOVE_AMOUNT;
+	cube.style.left = `${current_left}px`;
+}
+
+function moveDown() {
+	let current_top = getComputedStyle(cube)['top'];
+	current_top = parseInt(current_top);
+	if (current_top >= height - CUBE_HEIGHT) return;
+	current_top += MOVE_AMOUNT;
+	cube.style.top = `${current_top}px`;
+}
+
+function moveUp() {
+	let current_top = getComputedStyle(cube)['top'];
+	current_top = parseInt(current_top);
+	if (current_top <= 0) return;
+	current_top -= MOVE_AMOUNT;
+	cube.style.top = `${current_top}px`;
+}
+
+function say(msg) {
+	document.getElementById('info-banner').innerText = msg;
+}
+
+function update(progress) {
+  // Update the state of the world for the elapsed time since last render
+}
+
+function draw() {
+  // Draw the state of the world
+}
+
+function loop(timestamp) {
+  var progress = timestamp - lastRender
+
+  update(progress)
+  draw()
+
+  lastRender = timestamp
+  window.requestAnimationFrame(loop)
+}
+
+var lastRender = 0
+window.requestAnimationFrame(loop)

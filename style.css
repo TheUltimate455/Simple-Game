@@ -9,9 +9,38 @@ p {
 }
 body {
        background-color:#008B8B;
-       padding: 0;
-       margin: 0;
 }
+
+#main {
+	text-align: center;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+}
+
+#the-game {
+	width: 800px;
+	height: 450px;
+	background-color: #336;
+	border: 1px solid  #449;
+	margin: auto;
+}
+
+#game-cube {
+	width: 45px;
+	height: 45px;
+	background-color: #48a;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+#info-banner {
+	color: #ff0;
+}
+
 .container {
        background-color: #00008B;
        height: 50vh;
