@@ -56,7 +56,7 @@ body {
        justify-content: center;
        align-items: center;      
 }
-.square {
+.rectangle {
        background-color: black;
        height: 100px;
        width: 100vw;
