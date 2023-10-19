@@ -64,6 +64,14 @@ body {
 	bottom: -105px;
     left: 600px; 
 }
+.smallSQ1 {
+    width: 50px;
+    height: 500px;
+    background-color: #ccc;
+	position : relative;
+	bottom: -65px;
+    left: 300px; 
+}
 ul {
      font-family: "Lucida Console", monospace;
      color:#E0FFFF
