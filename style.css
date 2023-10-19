@@ -61,10 +61,10 @@ body {
     height: 100px;
     background-color: #ccc;
 	position : relative;
-	top: 200px;
-	right: 100px;
+	top: 400px;
+	right: 0px;
 	bottom: 0px;
-    left: 0px; 
+    left: 250px; 
 }
 ul {
      font-family: "Lucida Console", monospace;
