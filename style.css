@@ -65,6 +65,8 @@ body {
 	   right: 25;
 	   bottom: 0;
 	   left: 0;
+	   justify-content: center;
+       align-items: center;  
       }
 ul {
      font-family: "Lucida Console", monospace;
