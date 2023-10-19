@@ -56,6 +56,12 @@ body {
        justify-content: center;
        align-items: center;      
 }
+.square {
+       background-color: black;
+       height: 100px;
+       width: 100vw;
+       justify-content: center;
+       align-items: center
 ul {
      font-family: "Lucida Console", monospace;
      color:#E0FFFF
