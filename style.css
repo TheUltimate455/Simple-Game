@@ -60,6 +60,11 @@ body {
        width: 200px;
        height: 100px;
        background-color: #ccc;
+	   position : absolute;
+	   top: 0;
+	   right: 50;
+	   bottom: 50;
+	   left: 0;
       }
 ul {
      font-family: "Lucida Console", monospace;
