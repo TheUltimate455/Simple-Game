@@ -61,8 +61,8 @@ body {
     height: 100px;
     background-color: #ccc;
 	position : relative;
-	top: 250px;
-    left: 400px; 
+	top: 300px;
+    left: 800px; 
 }
 ul {
      font-family: "Lucida Console", monospace;
