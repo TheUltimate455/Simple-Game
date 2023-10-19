@@ -57,11 +57,10 @@ body {
        align-items: center;      
 }
 .rectangle {
-      .rectangle {
-        width: 200px;
-        height: 100px;
-        background-color: black;
-      } 
+       width: 200px;
+       height: 100px;
+       background-color: #ccc;
+      }
 ul {
      font-family: "Lucida Console", monospace;
      color:#E0FFFF
