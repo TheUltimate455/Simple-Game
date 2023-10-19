@@ -62,11 +62,9 @@ body {
        background-color: #ccc;
 	   position : absolute;
 	   top: 55;
-	   right: 25;
+	   right: 0;
 	   bottom: 0;
-	   left: 0;
-	   justify-content: center;
-       align-items: center;  
+	   left: 0; 
       }
 ul {
      font-family: "Lucida Console", monospace;
