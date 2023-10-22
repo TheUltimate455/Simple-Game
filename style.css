@@ -85,7 +85,7 @@ body {
     height: 25px;
     background-color: #ccc;
 	position : relative;
-	bottom: -15px;
+	bottom: 30px;
     left: 300px; 
 }
 .smallSQ4 {
@@ -93,7 +93,7 @@ body {
     height: 25px;
     background-color: #ccc;
 	position : relative;
-	bottom: -30px;
+	bottom: 45px;
     left: 300px; 
 }
 ul {
