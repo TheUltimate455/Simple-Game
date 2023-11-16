@@ -6,8 +6,8 @@ const width = 800;
 const height = 450;
 const keyDown = 40;
 const keyUp = 38;
-const keyLeft = 40;
-const keyRight = 40;
+const keyLeft = 37;
+const keyRight = 39;
 
 const MOVE_AMOUNT = 5; // the number of pixels the cube is supposed to move at a time
 const CUBE_WIDTH = 45;
