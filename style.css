@@ -96,6 +96,14 @@ body {
 	bottom: 100px;
     left: 200px; 
 }
+.Platform1 {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+	position : relative;
+	bottom: -105px;
+    left: 0px; 
+}
 ul {
      font-family: "Lucida Console", monospace;
      color:#E0FFFF
