@@ -6,13 +6,14 @@ const width = 800;
 const height = 450;
 const keyDown = 40;
 const keyUp = 38;
-const keyLeft = 37;
-const keyRight = 39;
+const keyLeft = 40;
+const keyRight = 40;
 
 const MOVE_AMOUNT = 5; // the number of pixels the cube is supposed to move at a time
 const CUBE_WIDTH = 45;
 const CUBE_HEIGHT = 45;
-
+const square = document.getElementById("square");
+square.style.pointerEvents = #ccc;
 let direction = 'right'; // valid values are right, left, up
 
 let cube = null;
@@ -133,19 +134,3 @@ function loop(timestamp) {
 
 var lastRender = 0
 window.requestAnimationFrame(loop)
-
-
-setInterval(function gravity(){
-	vy += 0.5
-})
-
-
-
-function update(cube){
-	x += xvl;
-	x += xvr;
-	y += vy;
-	requestAnimationFrame(update)
-}
-
-update()
