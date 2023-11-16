@@ -141,7 +141,7 @@ setInterval(function gravity(){
 
 
 
-function update(){
+function update(cube){
 	x += xvl;
 	x += xvr;
 	y += vy;
