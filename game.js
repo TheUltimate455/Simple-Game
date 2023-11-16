@@ -138,3 +138,14 @@ window.requestAnimationFrame(loop)
 setInterval(function gravity(){
 	vy += 0.5
 })
+
+
+
+function update(){
+	x += xvl;
+	x += xvr;
+	y += vy;
+	requestAnimationFrame(update)
+}
+
+update()
