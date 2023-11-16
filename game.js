@@ -133,3 +133,8 @@ function loop(timestamp) {
 
 var lastRender = 0
 window.requestAnimationFrame(loop)
+
+
+setInterval(function gravity(){
+	vy += 0.5
+})
