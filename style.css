@@ -101,7 +101,7 @@ body {
     height: 25px;
     background-color: #ccc;
 	position : relative;
-	bottom: -105px;
+	bottom: 0px;
     left: 0px; 
 }
 ul {
