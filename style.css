@@ -97,8 +97,8 @@ body {
     left: 200px; 
 }
 .Platform1 {
-    width: 25px;
-    height: 25px;
+    width: 150px;
+    height: 100px;
     background-color: #ccc;
 	position : relative;
 	bottom: 20px;
