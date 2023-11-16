@@ -78,14 +78,14 @@ body {
     background-color: #ccc;
 	position : relative;
 	bottom: 200px;
-    left: 450px; 
+    left: 440px; 
 }
 .smallSQ3 {
     width: 25px;
     height: 25px;
     background-color: #ccc;
 	position : relative;
-	bottom: 150px;
+	bottom: 3300px;
     left: 350px; 
 }
 .smallSQ4 {
@@ -94,7 +94,7 @@ body {
     background-color: #ccc;
 	position : relative;
 	bottom: 100px;
-    left: 250px; 
+    left: 220px; 
 }
 .Platform1 {
     width: 150px;
