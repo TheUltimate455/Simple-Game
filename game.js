@@ -12,8 +12,7 @@ const keyRight = 40;
 const MOVE_AMOUNT = 5; // the number of pixels the cube is supposed to move at a time
 const CUBE_WIDTH = 45;
 const CUBE_HEIGHT = 45;
-const square = document.getElementById("none");
-square.style.pointerEvents = "none";
+
 let direction = 'right'; // valid values are right, left, up
 
 let cube = null;
