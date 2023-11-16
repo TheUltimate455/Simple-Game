@@ -98,10 +98,10 @@ body {
 }
 .Platform1 {
     width: 150px;
-    height: 100px;
+    height: 70px;
     background-color: #ccc;
 	position : relative;
-	bottom: 20px;
+	bottom: 70px;
     left: 0px; 
 }
 ul {
