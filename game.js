@@ -92,25 +92,7 @@ function moveRight() {
 	cube.style.left = `${current_left}px`;
 }
 
-function moveDown() {
-	let current_top = getComputedStyle(cube)['top'];
-	current_top = parseInt(current_top);
-	if (current_top >= height - CUBE_HEIGHT) {
-		current_top = 0;
-	}
-	current_top += MOVE_AMOUNT;
-	cube.style.top = `${current_top}px`;
-}
 
-function moveUp() {
-	let current_top = getComputedStyle(cube)['top'];
-	current_top = parseInt(current_top);
-	if (current_top <= 0) {
-		current_top = height;
-	}
-	current_top -= MOVE_AMOUNT;
-	cube.style.top = `${current_top}px`;
-}
 
 function say(msg) {
 	document.getElementById('info-banner').innerText = msg;
