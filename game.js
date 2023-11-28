@@ -18,6 +18,9 @@ let direction = 'right'; // valid values are right, left, up
 let cube = null;
 let ticker = null;
 let ticker_interval = 50;
+let vy = 0;
+let vxl = 0;
+let vxr = 0;
 
 let state = {
   x: width / 2,
@@ -115,6 +118,10 @@ function say(msg) {
 
 function update(progress) {
   // Update the state of the world for the elapsed time since last render
+  x += vxl;
+  x += vxr;
+  y += vy;
+  
 }
 
 function draw() {
@@ -133,3 +140,7 @@ function loop(timestamp) {
 
 var lastRender = 0
 window.requestAnimationFrame(loop)
+
+ setInterval(function Gravity()){
+	 vy += 0.05 
+ }
