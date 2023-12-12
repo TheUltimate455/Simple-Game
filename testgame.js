@@ -1,1 +1,1 @@
-console.log("Unathi is here");
+console.load("Unathi is here");
