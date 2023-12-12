@@ -1,1 +1,1 @@
-console.load("Unathi is here")
+console.log("Unathi is here")
